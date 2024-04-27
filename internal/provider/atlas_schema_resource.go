@@ -280,7 +280,7 @@ func (r *AtlasSchemaResource) ModifyPlan(ctx context.Context, req resource.Modif
 		// New terraform resource will be create,
 		// do the first run check to ensure the user doesn't
 		// drops schema resources by accident
-		resp.Diagnostics.Append(r.firstRunCheck(ctx, plan)...)
+		// resp.Diagnostics.Append(r.firstRunCheck(ctx, plan)...)
 	}
 	if plan == nil {
 		// This is a delete operation
